@@ -14,11 +14,8 @@ Xhr.ajax({
       el: document.querySelector('.detail-view-example'),
       data: fire
     }).render();
-
-    console.log(fire);
   },
   error: function (e) {
-    console.log(e.stack);
     document.querySelector('.detail-view-example').innerHTML = [
       '<p class="alert error">',
         'Failed to create detail view example.',
